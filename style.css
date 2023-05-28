@@ -1,0 +1,18 @@
+
+header {
+    background: linear-gradient(#27d6e2, #fefefe);
+    padding: 100px 0;
+}
+
+.titular{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}    
+
+
