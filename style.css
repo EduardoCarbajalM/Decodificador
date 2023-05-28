@@ -172,6 +172,28 @@ textarea:focus,
     color: #495057;    
 }
 
+.boton-copiar {
+    align-items: center;
+    justify-content: center; 
+    padding: 2%;
+    gap: 8px;
+    width: 25%; 
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+}
+
+.alerta {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+  }
+  
 /* Responsive desing */
 
 @media (max-width: 57.5em) {

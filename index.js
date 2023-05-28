@@ -1,8 +1,5 @@
 function encriptar() {
     let texto = document.getElementById("texto").value;
-    // let tituloMensaje = document.getElementById("titulo-mensaje");
-    // let parrafo = document.getElementById("parrafo");
-    // let mono = document.getElementById("mono");
 
     let textoCrifrado = texto
     .replace(/e/gi, "enter")
@@ -18,7 +15,7 @@ function encriptar() {
         document.getElementById("mono").src = "imagenes/Muñeco.png";
     } else {
         document.getElementById("mono").src = "imagenes/Muñeco.png";
-        alert("Debes ingresar algún texto");
+        swal("Error", "Debes ingresar algún texto", "warning");
     }
 }
 
@@ -39,6 +36,23 @@ function desencriptar() {
         document.getElementById("mono").src = "imagenes/Muñeco.png";
     } else {
         document.getElementById("mono").src = "imagenes/Muñeco.png";
-        alert("Debes ingresar algún texto");
+        swal("Error", "Debes ingresar algún texto", "warning");
     }
 }
+
+function copiarTexto() {
+    let texto = document.getElementById("texto").value;
+  
+    if (texto.length > 0) {
+      navigator.clipboard.writeText(texto)
+        .then(() => {
+            swal("Texto agregado al portapapeles");
+        })
+        .catch((error) => {
+            swal("Error", "No se pudo agregar el texto al portapales", "warning");
+        });
+    } else {
+        swal("Error", "Debes ingresar algún texto", "warning");
+    }
+  }
+  

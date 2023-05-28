@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <script src="index.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <body>
         <div class="contenedor">
@@ -16,6 +17,7 @@
             </div>
 
             <div class="terminos">
+                <img src="imagenes/Group.png" alt="signo de aclamación">
                 <p>Solamente el texto en minúsculas y sin acentos</p>
             </div>
 
@@ -29,7 +31,7 @@
                 <div class="mensaje-encriptado" id="mensaje-encriptado">
                     <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
                     <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-                    <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+                    <input type="button" class="boton-copiar" value="Copiar" onclick="copiarTexto()">
                 </div>
             </div>
         </div>
